@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jihyeon.log — Who am I?</title>
+
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">JIHYEON.LOG</a>
+    <div class="desktop-nav"><a href="index.html" >Home</a><a href="who-am-i.html" aria-current="page">Quiz</a><a href="gallery.html" >Gallery</a><a href="contact.html" >Contact</a></div>
+  </nav>
+</header>
+<nav class="mobile-nav"><ul><li><a href="index.html" ><span class="icon">⌂</span>Home</a></li><li><a href="who-am-i.html" aria-current="page"><span class="icon">?</span>Quiz</a></li><li><a href="gallery.html" ><span class="icon">▧</span>Gallery</a></li><li><a href="contact.html" ><span class="icon">◎</span>Contact</a></li></ul></nav>
+
+<main class="page">
+  <section class="quiz-wrap" data-quiz-section>
+    <div class="page-heading">
+      <h1>Who am I?</h1>
+      <p class="mono-label">Solve the quiz to flip the card.</p>
+    </div>
+
+    <div class="quiz-meta">
+      <span data-quiz-category></span>
+      <span data-progress-text></span>
+    </div>
+    <div class="progress-track"><div class="progress-bar" data-progress-bar></div></div>
+
+    <article class="quiz-card" data-quiz-card>
+      <div class="quiz-card-inner">
+        <section class="quiz-face quiz-front">
+          <div class="quiz-header">
+            <span data-front-label></span>
+            <div class="quiz-dot"></div>
+          </div>
+          <h2 class="quiz-question" data-question></h2>
+          <div class="choice-list" data-choice-list></div>
+          <button class="quiz-submit" type="button" data-submit-answer disabled>CHECK ANSWER</button>
+        </section>
+
+        <section class="quiz-face quiz-back">
+          <div class="quiz-header"><span>ANSWER</span><div class="quiz-dot"></div></div>
+          <h2 class="quiz-answer-title" data-answer-title></h2>
+          <div class="answer-box"><p data-answer-description></p></div>
+          <div class="photo-strip" data-photo-strip></div>
+          <div class="answer-actions">
+            <button type="button" data-show-question>↶ BACK</button>
+            <button class="next" type="button" data-next-question>NEXT →</button>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <div class="pagination-dots" data-pagination-dots></div>
+  </section>
+
+  <section class="result-panel" data-result-panel>
+    <div class="mono-label">QUIZ COMPLETE</div>
+    <h2 data-result-score>0 / 5</h2>
+    <p>퀴즈가 끝났습니다. 답변에서 본 사진은 Gallery에서, 경력과 프로젝트는 Contact의 이력서와 포트폴리오에서 확인할 수 있습니다.</p>
+    <a class="primary-link" href="gallery.html">VIEW GALLERY →</a>
+  </section>
+</main>
+<script src="quiz-data.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
