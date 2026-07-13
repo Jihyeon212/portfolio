@@ -311,6 +311,14 @@ button { cursor: pointer; }
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
   scrollbar-width: none;
+  cursor: grab;
+  user-select: none;
+}
+.photo-strip:active {
+  cursor: grabbing;
+}
+.photo-strip img {
+  pointer-events: none;
 }
 .photo-strip::-webkit-scrollbar { display: none; }
 .photo-card {
